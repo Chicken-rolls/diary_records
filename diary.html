@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="www.lzqcode.com" />
+    <meta name="robots" content="all" />
+    <title>日记</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="layui/css/layui.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/gloable.css" />
+    <link rel="stylesheet" href="css/nprogress.css" />
+    <link rel="stylesheet" href="css/timeline.css" />
+  </head>
+  <style>
+    .content p {
+      text-indent: 28px;
+    }
+    .content p + p {
+      margin-top: 8px;
+    }
+    .content {
+      max-width: 60%;
+    }
+    .timeline-line {
+      left: 24%;
+    }
+    .timeline-main h2,
+    .timeline-main h2 > a {
+      width: 20%;
+    }
+    .timeline-month > ul > li .h4 {
+      width: 20%;
+    }
+  </style>
+  <body>
+    <div class="header"></div>
+    <header class="gird-header">
+      <div class="header-fixed">
+        <div class="header-inner">
+          <a href="javascript:void(0)" class="header-logo" id="logo">zyf ♥ rxy</a>
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="index.html">首页</a></li>
+              <!-- <li><a href="article.html">博客</a></li>
+              <li><a href="message.html">留言</a></li> -->
+              <li><a href="diary.html">生活碎片</a></li>
+              <li><a href="pic.html">照片</a></li>
+            </ul>
+          </nav>
+          <!-- <a href="#" class="blog-user">
+            <i class="fa fa-qq"></i>
+          </a> -->
+          <a class="phone-menu">
+            <i></i>
+            <i></i>
+            <i></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+      <div class="container-fixed">
+        <div class="timeline-box shadow">
+          <div class="timeline-main">
+            <h1><i class="fa fa-clock-o"></i>生活碎片</h1>
+            <div class="timeline-line"></div>
+            <div class="timeline-year">
+              <h2>
+                <a class="yearToggle">2020 年</a
+                ><i class="fa fa-caret-down fa-fw"></i>
+              </h2>
+              <div class="timeline-month">
+                <ul>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">02月13日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                        这一天是大年初四，家里来了亲戚，中午正吃饭喝酒呢，媒婆来了，然后跟我爸说了会话，然后果不其然让我下午去相亲，然后就跟之前相亲一样，走个过场
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">02月15日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                        跟相亲那个已经不聊天了，不想聊，本来初六要和舍友一起回石家庄的，他有事先走了，我打算初七再走
+                        坐我姑家的车，晚上时候突然打电话说不去石家庄了，然后我爸说他送我
+                        就初八再走了
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">02月16日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                        今天初七，今天下午去小铭家吐槽相亲，相的麻烦，然后小铭的妈妈说把小玉儿跟我说说（小时候就挺待见的，但是后来很长时间不接触了，年龄也大了
+                        害臊了，还以为以后无缘了呢，知道大一那会找小铭要过微信，可惜没要到💔，只能深深埋心里了呀，还好你没结婚，我刚好有机会），当时我就说嗯嗯嗯（嘿嘿嘿）
+                        贼开心的
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">02月18日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p style="text-align: left">
+                        这是过完年假期后第一天，当时那一天我还记得一直在纠结，就是超级想加你，但是有害臊，就婉转的问小铭，我说
+                        我加你妹合适不，然后小铭说 怎么，有想法啊？
+                        我晚上帮你问问；然后晚上跟我打了电话说了一下基本情况，我说有什么（就很想和你）然后第二周周三时候我又问了一次，我还以为你不想加我呢，或者说不乐意啥啥的；后来知道是小铭妈妈她们忙，当时慌张的心可算平稳了，起码还有戏！
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">02月23日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                        今天周五，刚下班回到家没多一会 小铭把微信推过来了；哇塞
+                        当时紧张的很，扑腾扑腾的 ，我还故意晚会再加（我在想啊
+                        加上了说啥，怎么说，别一下子给整尴尬了），然后后面就加上了，没想到聊了一晚上
+                        还是比较顺利的
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">03月01日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                        那会你回家，我其实想回家跟你见个面的，然后你说没有空，我想着说不准到时候有空呢；然后我就也回家，结果那天喝多了，你还给我打了好多视频电话，可惜啊
+                        我都没醒o(╥﹏╥)o
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">03月08日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                        你来石家庄找我了，我超级超级开心，我提前买了花，怕花多书包放不下，然后买了个花多个数差不多的
+                      </p>
+                      <p>
+                        那天见到你的时候,电梯门打开那一瞬间 我的天
+                        太美了，看呆了；简直掉入人间的仙女诶（穿的还很性感
+                        嘿嘿），然后把东西放下 我看你穿的超短裙
+                        我们要去吃烧烤，然后就让你换了身衣服，我怕你被有些人一直盯着；我们到了烧烤地方，我还想着跟你挨着坐嘞，某人嫌挤得慌，那好叭，晚上回去喝了点酒后，我才跟你说书包里有花
+                        哈哈哈
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">03月11日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                        其实本来昨天就想给你买📱来着，我想给你买全一点，比如壳膜等等；因为听你打电话后面你要换手机，然后你还要换地方（我记得你说没钱了好像是），不重要！
+                      </p>
+                      <p style="font-weight: bold; color: #000">
+                        反正我就想对你好，想让你看到不是空口说白话，不是随口一句喜欢<span
+                          style="color: red"
+                          >♡</span
+                        >
+                      </p>
+                      <p>
+                        就如 现在是2024.05.07
+                        我买过织花的毛线，弄幸运星的纸，织花的我的确弄不出来,弄得我头大；但是
+                        幸运星我弄出来啦，可是你说让我自己留着，就是叠给你看的呀，不然我这大糙手弄这做啥子
+                      </p>
+                      <p>
+                        今天（05月07日）刚好有个快递到了，网上有一句话，<span
+                          style="color: #7900e9; font-weight: bold"
+                          >写上林赋，得心上人</span
+                        >计划这周写完吧！希望你这个月能来找我呀。
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">03月17日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                        哇塞 你给我点了个早餐，太开心啦 辣么多
+                        根本吃不完，大早上给我吃撑了
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">03月23日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                        我下午听了一下午的
+                        《这就是爱》，我还抄了一遍歌词，想到上次你说你喝热水，然后我带了花，买了个可以方便烧水的杯子，我跟你说看着你一直喝水（我烧的）
+                        超开心；就是可惜
+                        当天晚上惹你不开心了，然后我也不敢唱歌跟你表白了，不过也正好
+                        我感觉不够那么正式跟重视；
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">03月30日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                        经过了小一周的考虑，我想去给你正式表白，然后我周四去了周大生买了金戒指，我周五买了一束花，然后我等到凌晨
+                        也就是周六早上去找你，我心里想象了无数遍给你表白的场景，比如
+                        我在小区门口等你，刚好你回来，我单膝下跪把花给你，你很开心，我再给你戴上戒指，然后大大的拥抱，可是我真没想到会惹你不高兴
+                      </p>
+                      <p>
+                        当时就后悔了，不该突然来，啊啊啊
+                        也不知道啥时候能让你戴上我的戒指
+                        好想你啊~，快俩月了，5月份能找我来吧（我想把房间布置一下，来一次正式且重视的告白）
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">4月10号左右 ~ 4月20号左右</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                       这段时间老难熬了，因为你不咋理我，我老是以为你是不是因为之前我突然找你的事情；我知道你忙，但是就是回我一句也好，我的确说话挺多的，我不想跟别人说，就是特别特别想跟你说；后来4月24号晚上喝多了，因为我那两周就很不开心，感觉人都快抑郁了。
+                      </p>
+                      <p style="font-weight: bold;color: #1cf7ad;">
+                        我甚至一直在哭着说你咋不理我，你不会不要我了吧,我错了可以改呀，然后你还跟我说 要还我钱，咱们之前说好的 让你付酒钱 咋突然变了，也不告诉我你的住址，就感觉你想跟我断联系了一样，那一晚哭的很爽 很久的难过一下子就宣泄出来了，我其实想跟你打电话问问，你说不喜欢 哭，我不敢给你打
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">4月25号</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                      经过昨晚上，我想了很多事，我为什么会怀疑你，你知道吗，我甚至以为你有别的心动的人了已经；而我又没机会了。周六我打了一天的游戏，我怕忍不住一直给你发消息，我怕你讨厌我，我自己找点事情做
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">05月03日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                      你出去玩啦 青岛 → 威海
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="h4 animated fadeInLeft">
+                      <p class="date">05月07日</p>
+                    </div>
+                    <p class="dot-circle animated">
+                      <i class="fa fa-dot-circle-o"></i>
+                    </p>
+                    <div class="content animated fadeInRight">
+                      <p>
+                      今天你去淄博 现在已经快18.00了，估计已经吃上烧烤、喝酒了，今天又问了一遍这个月能找我来不，<span style="color: #7900e9;">想你</span>
+                      </p>
+                    </div>
+                    <div class="clear"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h1 style="padding-top: 4px; padding-bottom: 2px; margin-top: 40px">
+              <i class="fa fa-hourglass-end"></i>THE END
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="grid-footer">
+      <div class="footer-fixed">
+        <div class="copyright">
+          <div class="info" style="padding-bottom: 20px">
+            <p class="mt05" style="font-size: 25px">
+              我们要一起去吃去喝出去玩，我要你开心❤
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="layui/layui.js"></script>
+    <script src="js/yss/gloable.js"></script>
+    <script src="js/plugins/nprogress.js"></script>
+    <script>
+      NProgress.start();
+    </script>
+    <script src="js/pagediary.js"></script>
+    <script>
+      window.onload = function () {
+        NProgress.done();
+      };
+    </script>
+  </body>
+</html>
