@@ -114,6 +114,7 @@
 .link-list .pd-lr-10 {
   padding: 0 10px 20px;
   background-color: #fff;
+  padding-top: 10px;
 }
 .link-list li+li{
   margin-top: 20px;
