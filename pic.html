@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="www.lzqcode.com" />
     <meta name="robots" content="all" />
-    <title>友链</title>
+    <title>与小玉儿照片</title>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="layui/css/layui.css" />
     <link rel="stylesheet" href="css/master.css" />
@@ -114,6 +114,9 @@
     <script src="js/plugins/blogbenoitboucart.min.js"></script>
     <script>
       window.onload = function () {
+        if (sessionStorage.getItem("rxy") != "true") {
+          window.open("./login.html");
+        }
         NProgress.done();
       };
     </script>
