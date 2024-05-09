@@ -78,7 +78,7 @@
           return false;
         }
       };
-      
+
       function hasClass(elem, cls) {
         cls = cls || "";
         if (cls.replace(/\s/g, "").length == 0) return false; //当cls没有参数时，返回false
@@ -140,14 +140,14 @@
           setTimeout(function () {
             addClass(document.querySelector(".sk-rotating-plane"), "active");
             document.querySelector(".login").style.display = "none";
-          }, 800);
+          }, 500);
           setTimeout(function () {
             removeClass(document.querySelector(".login"), "active");
             removeClass(document.querySelector(".sk-rotating-plane"), "active");
             document.querySelector(".login").style.display = "block";
             sessionStorage.setItem("rxy", "true");
             window.open("./index.html");
-          }, 2000);
+          }, 1000);
         } else {
           var option = {
             type: "err",
