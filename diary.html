@@ -36,7 +36,15 @@
       width: 20%;
     }
   </style>
-  <body>
+  <script>
+    if (sessionStorage.getItem("rxy") != "true") {
+      // window.open("./login.html");
+      location.href = "./login.html";
+    } else {
+      $("body").show();
+    }
+  </script>
+  <body style="display: none">
     <div class="header"></div>
     <header class="gird-header">
       <div class="header-fixed">
@@ -367,10 +375,6 @@
     <script src="js/yss/gloable.js"></script>
     <script src="js/plugins/nprogress.js"></script>
     <script>
-      if (sessionStorage.getItem("rxy") != "true") {
-        // window.open("./login.html");
-        location.href = "./login.html";
-      }
       NProgress.start();
     </script>
     <script src="js/pagediary.js"></script>
