@@ -25,7 +25,7 @@
   <body>
     <div id="particles-js">
       <div class="login">
-        <div class="login-top">致我爱的姑娘—小玉儿♡</div>
+        <div class="login-top">我的大美女—小玉儿♡</div>
         <div class="login-center clearfix">
           <div class="login-center-img">
             <img src="./signin/img/name.png" />
@@ -141,6 +141,19 @@
             addClass(document.querySelector(".sk-rotating-plane"), "active");
             document.querySelector(".login").style.display = "none";
           }, 500);
+          var option = {
+            type: "success",
+            position: "top-center",
+            showicon: true,
+            title: "登陆成功",
+            shadow: true,
+            shadowclickclose: true,
+            autoclose: true,
+            callback: function (data, obj) {
+              obj.ele.close(10);
+            },
+          };
+          WfMsg(option);
           setTimeout(function () {
             removeClass(document.querySelector(".login"), "active");
             removeClass(document.querySelector(".sk-rotating-plane"), "active");
