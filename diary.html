@@ -36,15 +36,26 @@
       width: 20%;
     }
   </style>
-  <script>
-    if (sessionStorage.getItem("rxy") != "true") {
-      // window.open("./login.html");
-      location.href = "./login.html";
-    } else {
-      $("body").show();
-    }
-  </script>
-  <body style="display: none">
+  <body id="body" style="display: none">
+    <script>
+      if (sessionStorage.getItem("rxy") != "true") {
+        // window.open("./login.html");
+        location.href = "./login.html";
+      } else {
+        document.getElementById("body").style.display = "block";
+      }
+      document.oncontextmenu = function () {
+        // 阻止鼠标右键
+        return false;
+      };
+      document.onkeydown = function (e) {
+        // F12
+        if (e.ctrlKey && e.keyCode == 123) {
+          e.preventDefault();
+          return false;
+        }
+      };
+    </script>
     <div class="header"></div>
     <header class="gird-header">
       <div class="header-fixed">

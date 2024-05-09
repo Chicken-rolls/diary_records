@@ -23,15 +23,26 @@
     <link href="css/index_style.css" rel="stylesheet" type="text/css" />
     <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
   </head>
-  <script>
-    if (sessionStorage.getItem("rxy") != "true") {
-      // window.open("./login.html");
-      location.href = "./login.html";
-    } else {
-      $("body").show();
-    }
-  </script>
-  <body style="display: none">
+  <body id="body" style="display: none">
+    <script>
+      if (sessionStorage.getItem("rxy") != "true") {
+        // window.open("./login.html");
+        location.href = "./login.html";
+      } else {
+        document.getElementById("body").style.display = "block";
+      }
+      document.oncontextmenu = function () {
+        // 阻止鼠标右键
+        return false;
+      };
+      document.onkeydown = function (e) {
+        // F12
+        if (e.ctrlKey && e.keyCode == 123) {
+          e.preventDefault();
+          return false;
+        }
+      };
+    </script>
     <div id="menu" class="hover_animation menu_open" data-mark="false">
       <span></span>
       <span></span>
