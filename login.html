@@ -24,8 +24,21 @@
   </head>
   <body>
     <div id="particles-js">
-      <div class="login">
-        <div class="login-top">我的大美女—小玉儿♡</div>
+      <div
+        class="login"
+        style="
+          background-image: url(./image/rxy/20240503.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="login-top" style="color: #da589fe6; font-weight: bold;font-size: 20px;line-height: 30px;margin-top: 25px;writing-mode: vertical-lr;letter-spacing: 6px;">
+          <!-- 彼女子之容,可谓倾国倾城,绝世佳人。♡ -->
+          千秋无绝色<br>悦目是佳人<br>
+          倾国倾城貌<br>惊为天下人
+        </div>
+        <!-- <div class="login-top">小玉儿♡</div> -->
+        <!-- <div class="login-top"><img src="./image/rxy.jpg" alt=""></div> -->
         <div class="login-center clearfix">
           <div class="login-center-img">
             <img src="./signin/img/name.png" />
@@ -34,7 +47,7 @@
             <input
               type="text"
               name=""
-              value="小玉儿"
+              value=""
               placeholder="请输入您的用户名"
               onfocus="this.placeholder=''"
               onblur="this.placeholder='请输入您的用户名'"
@@ -67,17 +80,17 @@
     <script src="./signin/js/particles.min.js"></script>
     <script src="./signin/js/app.js"></script>
     <script type="text/javascript">
-      document.oncontextmenu = function () {
-        // 阻止鼠标右键
-        return false;
-      };
-      document.onkeydown = function (e) {
-        // F12
-        if (e.ctrlKey && e.keyCode == 123) {
-          e.preventDefault();
-          return false;
-        }
-      };
+      // document.oncontextmenu = function () {
+      //   // 阻止鼠标右键
+      //   return false;
+      // };
+      // document.onkeydown = function (e) {
+      //   // F12
+      //   if (e.ctrlKey && e.keyCode == 123) {
+      //     e.preventDefault();
+      //     return false;
+      //   }
+      // };
 
       function hasClass(elem, cls) {
         cls = cls || "";
@@ -159,8 +172,9 @@
             removeClass(document.querySelector(".sk-rotating-plane"), "active");
             document.querySelector(".login").style.display = "block";
             sessionStorage.setItem("rxy", "true");
-            window.open("./index.html");
-          }, 1000);
+            // window.open("./index.html");
+            location.href = "./index.html";
+          }, 2000);
         } else {
           var option = {
             type: "err",
