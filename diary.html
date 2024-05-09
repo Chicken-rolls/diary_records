@@ -41,7 +41,9 @@
     <header class="gird-header">
       <div class="header-fixed">
         <div class="header-inner">
-          <a href="javascript:void(0)" class="header-logo" id="logo">zyf ❤ rxy</a>
+          <a href="javascript:void(0)" class="header-logo" id="logo"
+            >zyf ❤ rxy</a
+          >
           <nav class="nav" id="nav">
             <ul>
               <li><a href="index.html">首页</a></li>
@@ -284,10 +286,14 @@
                     </p>
                     <div class="content animated fadeInRight">
                       <p>
-                       这段时间老难熬了，因为你不咋理我，我老是以为你是不是因为之前我突然找你的事情；我知道你忙，但是就是回我一句也好，我的确说话挺多的，我不想跟别人说，就是特别特别想跟你说；后来4月24号晚上喝多了，因为我那两周就很不开心，感觉人都快抑郁了。
+                        这段时间老难熬了，因为你不咋理我，我老是以为你是不是因为之前我突然找你的事情；我知道你忙，但是就是回我一句也好，我的确说话挺多的，我不想跟别人说，就是特别特别想跟你说；后来4月24号晚上喝多了，因为我那两周就很不开心，感觉人都快抑郁了。
                       </p>
-                      <p style="font-weight: bold;color: #1cf7ad;">
-                        我甚至一直在哭着说你咋不理我，你不会不要我了吧,我错了可以改呀，然后你还跟我说 要还我钱，咱们之前说好的 让你付酒钱 咋突然变了，也不告诉我你的住址，就感觉你想跟我断联系了一样，那一晚哭的很爽 很久的难过一下子就宣泄出来了，我其实想跟你打电话问问，你说不喜欢 哭，我不敢给你打
+                      <p style="font-weight: bold; color: #1cf7ad">
+                        我甚至一直在哭着说你咋不理我，你不会不要我了吧,我错了可以改呀，然后你还跟我说
+                        要还我钱，咱们之前说好的 让你付酒钱
+                        咋突然变了，也不告诉我你的住址，就感觉你想跟我断联系了一样，那一晚哭的很爽
+                        很久的难过一下子就宣泄出来了，我其实想跟你打电话问问，你说不喜欢
+                        哭，我不敢给你打
                       </p>
                     </div>
                     <div class="clear"></div>
@@ -301,7 +307,7 @@
                     </p>
                     <div class="content animated fadeInRight">
                       <p>
-                      经过昨晚上，我想了很多事，我为什么会怀疑你，你知道吗，我甚至以为你有别的心动的人了已经；而我又没机会了。周六我打了一天的游戏，我怕忍不住一直给你发消息，我怕你讨厌我，我自己找点事情做
+                        经过昨晚上，我想了很多事，我为什么会怀疑你，你知道吗，我甚至以为你有别的心动的人了已经；而我又没机会了。周六我打了一天的游戏，我怕忍不住一直给你发消息，我怕你讨厌我，我自己找点事情做
                       </p>
                     </div>
                     <div class="clear"></div>
@@ -314,9 +320,7 @@
                       <i class="fa fa-dot-circle-o"></i>
                     </p>
                     <div class="content animated fadeInRight">
-                      <p>
-                      你出去玩啦 青岛 → 威海
-                      </p>
+                      <p>你出去玩啦 青岛 → 威海</p>
                     </div>
                     <div class="clear"></div>
                   </li>
@@ -329,7 +333,11 @@
                     </p>
                     <div class="content animated fadeInRight">
                       <p>
-                      今天你去淄博 现在已经快18.00了，估计已经吃上烧烤、喝酒了，今天又问了一遍这个月能找我来不，<span style="color: #7900e9;">想你</span>
+                        今天你去淄博
+                        现在已经快18.00了，估计已经吃上烧烤、喝酒了，今天又问了一遍这个月能找我来不，<span
+                          style="color: #7900e9"
+                          >想你</span
+                        >
                       </p>
                     </div>
                     <div class="clear"></div>
@@ -359,14 +367,15 @@
     <script src="js/yss/gloable.js"></script>
     <script src="js/plugins/nprogress.js"></script>
     <script>
+      if (sessionStorage.getItem("rxy") != "true") {
+        // window.open("./login.html");
+        location.href = "./login.html";
+      }
       NProgress.start();
     </script>
     <script src="js/pagediary.js"></script>
     <script>
       window.onload = function () {
-        if (sessionStorage.getItem("rxy") != "true") {
-          window.open("./login.html");
-        }
         NProgress.done();
       };
     </script>

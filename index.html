@@ -23,6 +23,12 @@
     <link href="css/index_style.css" rel="stylesheet" type="text/css" />
     <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
   </head>
+  <script>
+    if (sessionStorage.getItem("rxy") != "true") {
+      // window.open("./login.html");
+      location.href = "./login.html"
+    }
+  </script>
   <body>
     <div id="menu" class="hover_animation menu_open" data-mark="false">
       <span></span>
@@ -244,11 +250,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/index.js"></script>
     <script>
-      window.onload = function () {
-        if (sessionStorage.getItem("rxy") != "true") {
-          window.open("./login.html");
-        }
-      };
+      window.onload = function () {};
     </script>
   </body>
 </html>

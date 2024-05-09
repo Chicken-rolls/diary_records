@@ -20,7 +20,9 @@
     <header class="gird-header">
       <div class="header-fixed">
         <div class="header-inner">
-          <a href="javascript:void(0)" class="header-logo" id="logo">zyf ❤ rxy</a>
+          <a href="javascript:void(0)" class="header-logo" id="logo"
+            >zyf ❤ rxy</a
+          >
           <nav class="nav" id="nav">
             <ul>
               <li><a href="index.html">首页</a></li>
@@ -86,7 +88,10 @@
               <div class="pd-lr-10">
                 <img src="./image/pic/第二次的花.jpg" />
                 <span>第二次带的花</span>
-                <p>第二次带的花虽然拿出来了，但是实际上是头一天就买了的 还是脸皮薄了</p>
+                <p>
+                  第二次带的花虽然拿出来了，但是实际上是头一天就买了的
+                  还是脸皮薄了
+                </p>
               </div>
             </li>
           </ul>
@@ -108,15 +113,16 @@
     <script src="js/yss/gloable.js"></script>
     <script src="js/plugins/nprogress.js"></script>
     <script>
+      if (sessionStorage.getItem("rxy") != "true") {
+        // window.open("./login.html");
+        location.href = "./login.html";
+      }
       NProgress.start();
     </script>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/plugins/blogbenoitboucart.min.js"></script>
     <script>
       window.onload = function () {
-        if (sessionStorage.getItem("rxy") != "true") {
-          window.open("./login.html");
-        }
         NProgress.done();
       };
     </script>
