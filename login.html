@@ -22,6 +22,18 @@
     <script src="./jquerymsg/js/jquery.min.js"></script>
     <script src="./jquerymsg/js/layerMsg.js"></script>
   </head>
+  <!-- 背景音乐 -->
+  <audio
+    src="./mp3/静悄悄20240514.mp3"
+    autoplay
+    loop
+    style="display: none"
+  ></audio>
+  <script>
+    var login = document.getElementsByTagName("audio")[0];
+    login.play();
+    // window.onload = function () {};
+  </script>
   <body>
     <div id="particles-js">
       <div
@@ -86,14 +98,6 @@
       </div>
       <div class="sk-rotating-plane"></div>
     </div>
-    <!-- 背景音乐 -->
-    <audio src="./mp3/静悄悄20240514.mp3" autoplay loop style="display: none"></audio>
-    <script>
-      var login = document.getElementsByTagName("audio")[0];
-      window.onload = function () {
-        login.play();
-      };
-    </script>
     <!-- scripts -->
     <script src="./signin/js/particles.min.js"></script>
     <script src="./signin/js/app.js"></script>
