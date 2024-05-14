@@ -417,9 +417,15 @@
       NProgress.start();
     </script>
     <script src="js/pagediary.js"></script>
+    <!-- 背景音乐 -->
+    <audio src="./mp3/遇见20240514.mp3" autoplay loop style="display: none"></audio>
     <script>
       window.onload = function () {
         NProgress.done();
+        var diaryAudio = document.getElementsByTagName("audio")[0];
+          window.onload = function () {
+            diaryAudio.play();
+          };
       };
     </script>
   </body>

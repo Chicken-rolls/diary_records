@@ -136,9 +136,19 @@
     </script>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/plugins/blogbenoitboucart.min.js"></script>
+
+    <!-- 背景音乐 -->
+    <audio
+      src="./mp3/不得不爱20240514.mp3"
+      autoplay
+      loop
+      style="display: none"
+    ></audio>
     <script>
+      var picAudio = document.getElementsByTagName("audio")[0];
+      NProgress.done();
       window.onload = function () {
-        NProgress.done();
+        picAudio.play();
       };
     </script>
   </body>

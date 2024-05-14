@@ -262,8 +262,14 @@
     <script src="./layui/layui.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/index.js"></script>
+
+    <!-- 背景音乐 -->
+    <audio src="./mp3/多一点20240514.mp3" autoplay loop style="display: none"></audio>
     <script>
-      window.onload = function () {};
+      var indexAudio = document.getElementsByTagName("audio")[0];
+      window.onload = function () {
+        indexAudio.play();
+      };
     </script>
   </body>
 </html>

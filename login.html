@@ -86,7 +86,14 @@
       </div>
       <div class="sk-rotating-plane"></div>
     </div>
-    <iframe src="./audio.html" frameborder="0"></iframe>
+    <!-- 背景音乐 -->
+    <audio src="./mp3/静悄悄20240514.mp3" autoplay loop style="display: none"></audio>
+    <script>
+      var login = document.getElementsByTagName("audio")[0];
+      window.onload = function () {
+        login.play();
+      };
+    </script>
     <!-- scripts -->
     <script src="./signin/js/particles.min.js"></script>
     <script src="./signin/js/app.js"></script>
