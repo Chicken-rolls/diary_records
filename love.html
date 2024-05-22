@@ -40,7 +40,18 @@
   </head>
 
   <body>
-    <audio src="./Love_files/love.mp3" controls loop style="display: none;"></audio>
+    <audio
+      src="./Love_files/love.mp3"
+      controls
+      loop
+      style="display: none"
+    ></audio>
+    <script>
+      var love = document.getElementsByTagName("audio")[0];
+      window.onload = function () {
+        love.play();
+      };
+    </script>
     <div id="main">
       <div id="error">
         您使用的浏览器无法支持即将显示的内容，请换成谷歌(<a
@@ -304,10 +315,6 @@
 
         runAsync().start();
       })();
-      var love = document.getElementsByTagName("audio")[0];
-      window.onload = function () {
-        love.play();
-      };
     </script>
   </body>
 </html>
