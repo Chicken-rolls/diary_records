@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="www.lzqcode.com" />
     <meta name="robots" content="all" />
-    <title>与小玉儿照片</title>
+    <title>随手记录的视频</title>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="layui/css/layui.css" />
     <link rel="stylesheet" href="css/master.css" />
@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="css/nprogress.css" />
     <link rel="stylesheet" href="css/about.css" />
   </head>
+  <style>
+    .pd-lr-10 video{
+        width: 100%;
+    }
+  </style>
   <body id="body" style="display: none">
     <script>
       if (sessionStorage.getItem("rxy") != "true") {
@@ -88,10 +93,10 @@
           </a>
         </header>
         <div class="about-title">
-          <h1 style="font-family: BarbaraHand; font-size: 60px">
-            No other love but you.
+          <h1 style="font-family: BarbaraHand; font-size: 45px">
+            Life in lowercase, love in uppercase.
           </h1>
-          <p style="font-size: 12px">除你之外，别无所爱。</p>
+          <p style="font-size: 12px">小写生活，大写爱。</p>
         </div>
       </div>
       <div class="container-fixed">
@@ -99,54 +104,12 @@
           <ul class="link-list clearfix">
             <li>
               <div class="pd-lr-10">
-                <img src="./image/pic/20240225我胆子是真大嘿嘿.jpg" />
-                <span>第一次艾特</span>
-                <p>嘿嘿嘿</p>
+                <video src="./video/不化妆就超级美.mp4" controls></video>
               </div>
             </li>
             <li>
               <div class="pd-lr-10">
-                <img src="./image/pic/第一次的花.jpg" />
-                <span>第一次带的花</span>
-                <p>第一次见面时候太害臊了，不敢拿出来</p>
-              </div>
-            </li>
-            <li>
-              <div class="pd-lr-10">
-                <img src="./image/pic/第二次的花.jpg" />
-                <span>第二次带的花</span>
-                <p>
-                  第二次带的花虽然拿出来了，但是实际上是头一天就买了的
-                  还是脸皮薄了
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="pd-lr-10">
-                <img src="./image/pic/202403吃火锅偷拍的.jpg" />
-                <span>吃火锅</span>
-                <p>偷偷拍了美女艳照，就是可惜脸没有拍到</p>
-              </div>
-            </li>
-            <li>
-              <div class="pd-lr-10">
-                <img src="./image/pic/等待了好久的礼物.jpg" />
-                <span>2024 03 28</span>
-                <p>等待多时的礼物🎁</p>
-              </div>
-            </li>
-            <li>
-              <div class="pd-lr-10">
-                <img src="./image/pic/20240525.png" />
-                <span>2024 05 25</span>
-                <p>看见美女喝倒的一天</p>
-              </div>
-            </li>
-            <li>
-              <div class="pd-lr-10">
-                <img src="./image/pic/20240527.jpg" />
-                <span>2024 05 27</span>
-                <p>骑个心心❤送给你呀</p>
+                <video src="./video/2024年3月我们第一次去ktv.mp4" controls></video>
               </div>
             </li>
           </ul>
@@ -172,20 +135,8 @@
     </script>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/plugins/blogbenoitboucart.min.js"></script>
-
-    <!-- 背景音乐 -->
-    <audio
-      src="./mp3/不得不爱20240514.mp3"
-      autoplay
-      loop
-      style="display: none"
-    ></audio>
     <script>
-      var picAudio = document.getElementsByTagName("audio")[0];
       NProgress.done();
-      window.onload = function () {
-        picAudio.play();
-      };
     </script>
   </body>
 </html>
